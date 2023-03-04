@@ -1,0 +1,27 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<button class="b-class" onclick="location.href = '/';">Home</button>
+
+<form action="/findclosestlocation" method="get">
+    <label for="x">x:</label><br>
+    <input type="number" step="any" id="x" name="x" value=""><br>
+    <label for="y">y:</label><br>
+    <input type="number" step="any" id="y" name="y" value=""><br>
+    <input type="submit" value="Submit">
+</form>
+
+<div th:if="${location} != null">
+    The closest location is:
+    <div th:text="${location.id}">1</div>
+    <div th:text="${location.xcoord}">x ...</div>
+    <div th:text="${location.ycoord}">y ...</div>
+    <div th:text="${location.shortNote}">shortNote ...</div>
+</div>
+</body>
+
+</html>

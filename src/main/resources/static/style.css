@@ -1,0 +1,8 @@
+.b-class {
+    font-weight: bolder !important;
+    background-color: black !important;
+    color: antiquewhite !important;
+}
+table, th, td {
+    border: 1px solid;
+}

@@ -1,0 +1,38 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<button class="b-class" onclick="location.href = '/';">Home</button>
+<table>
+    <tr>
+        <th>Field name</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td th:text="${location.id}">x ...</td>
+    </tr>
+    <tr>
+        <td>xCoord</td>
+        <td th:text="${location.xcoord}">x ...</td>
+    </tr>
+    <tr>
+        <td>yCoord</td>
+        <td th:text="${location.ycoord}">x ...</td>
+    </tr>
+    <tr>
+        <td>shortNote</td>
+        <td th:text="${location.shortNote}">x ...</td>
+    </tr>
+    <tr>
+        <td>comments</td>
+        <td th:text="${location.comments}">x ...</td>
+    </tr>
+</table>
+
+</body>
+
+</html>

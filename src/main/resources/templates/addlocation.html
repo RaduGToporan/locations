@@ -1,0 +1,25 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<button class="b-class" onclick="location.href = '/';">Home</button>
+<!--xcoord, ycoord, shortNote, and comments-->
+<form action="/addlocation" method="post">
+    <label for="xcoord">xCoord:</label><br>
+    <input type="number" id="xcoord" name="xcoord" value="34"><br>
+    <label for="ycoord">yCoord:</label><br>
+    <input type="number" id="ycoord" name="ycoord" value="33"><br>
+    <label for="shortNote">Short note:</label><br>
+    <input type="text" id="shortNote" name="shortNote" value="Limassol"><br><br>
+    <label for="comments">Comments:</label><br>
+    <input type="text" id="comments" name="comments" value="Write your comments"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+
+</html>

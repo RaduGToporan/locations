@@ -1,0 +1,29 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<button class="b-class" onclick="location.href = '/';">Home</button>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>xCoord</th>
+        <th>yCoord</th>
+        <th>shortNote</th>
+    </tr>
+    <tr th:each="location : ${locations}">
+        <td th:text="${location.id}">1</td>
+        <td th:text="${location.xcoord}">x ...</td>
+        <td th:text="${location.ycoord}">y ...</td>
+        <td th:text="${location.shortNote}">shortNote ...</td>
+        <td>
+            <button class="b-class" th:onclick="'location.href = \'/view/'+${location.id}+'\''">View</button>
+        </td>
+    </tr>
+</table>
+</body>
+
+</html>
